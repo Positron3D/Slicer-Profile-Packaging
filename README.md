@@ -19,12 +19,12 @@ There are 2 scripts used to help test bundles in PrusaSlicer before creating a p
 
 To only generate the test bundle:
 ```
-cd scripts
-python3 ./PrusaSlicer/GenerateTestBundle.py
+export PYTHONPATH="${PYTHONPATH}:/${PWD}/scripts"
+python3 ./scripts/PrusaSlicer/GenerateTestBundle.py
 ```
 
 To generate the test bundle and use it in PrusaSlicer:
 ```
-cd scripts
-python3 ./PrusaSlicer/UseTestBundle.py
+export PYTHONPATH="${PYTHONPATH}:/${PWD}/scripts"
+python3 ./scripts/PrusaSlicer/UseTestBundle.py
 ```
